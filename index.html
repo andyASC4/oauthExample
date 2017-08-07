@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,12 @@
     <title>myOAuth</title>
 
     <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="945903471189-ltg2u9qhkl4t60tnbs5q5h328efvd4g2.apps.googleusercontent.com">
+    
+    <!--945903471189-ltg2u9qhkl4t60tnbs5q5h328efvd4g2.apps.googleusercontent.com-->
 
 
     <!--jquery-->
@@ -22,28 +26,6 @@
     <div class="signs">
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
-    </div>
-
-
-    <div class ="mainContainer">
-        <!--Text greeting user-->
-        <header>
-            <h1>WELCOME <span class="userName">USER_NAME</span></h1>    
-        </header>
-
-        <!--Populate section with user data-->
-        <section>
-            <!--picture-->
-            <div class = "userImg">
-                <img src="assets/placeholder.png">
-            </div>
-
-            <!--User Data-->
-            <div class="userData">
-                <h2>E-MAIL:</h2>
-                <p class="email">example@example.com</p>
-            </div>
-        </section>
     </div>
 </body>
 </html>
